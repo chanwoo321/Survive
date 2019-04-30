@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forestpath"
+    tools:context=".Encounter">
+
+    <ProgressBar
+        android:id="@+id/enemyHealthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#363636" />
+
+    <ProgressBar
+        android:id="@+id/playerHealthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="96dp"
+        android:background="#363636" />
+
+    <ImageView
+        android:id="@+id/enemy"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        tools:srcCompat="@drawable/bear" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="121dp"
+        app:srcCompat="@drawable/cs125" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/attack"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Attack" />
+
+        <Button
+            android:id="@+id/bait"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Bait \n (Uses one food)" />
+
+        <Button
+            android:id="@+id/run"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:text="Run" />
+    </LinearLayout>
+</FrameLayout>

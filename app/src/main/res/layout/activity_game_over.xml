@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:visibility="visible"
+    tools:context="@string/title_activity_game_over">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="Game Over"
+        android:textColor="#D31212"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:text="Game Over" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <TextView
+        android:id="@+id/causeOfDeath1"
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:gravity="bottom|center"
+        android:text="You Died"
+        android:textColor="#04720A"
+        android:textSize="30sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/toMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="main menu"
+            android:textSize="30sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/stat"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="115dp"
+            android:text="See stats"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

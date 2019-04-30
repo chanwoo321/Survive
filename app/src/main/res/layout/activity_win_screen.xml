@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".WinScreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="CONGRATULATIONS"
+        android:textColor="#E9E034"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="170dp"
+        android:gravity="center"
+        android:text="Thank you for playing, and I hope you enjoyed the game."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="309dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="270dp"
+        android:gravity="center"
+        android:text="Creators: Jonathan Kim and Pierce Blazina"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:text="@string/main_menu"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/stat"
+        android:layout_width="match_parent"
+        android:layout_height="115sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="165sp"
+        android:text="See stats"
+        android:textSize="30sp" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

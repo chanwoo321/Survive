@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    tools:context=".ActualGameActivity">
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Forward"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/drink"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Drink"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/eat"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Eat"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/cs125"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="368dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="#363636" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="130dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="90dp"
+        android:background="#363636" />
+
+    <ProgressBar
+        android:id="@+id/water"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:background="#363636"
+        android:clickable="false"
+        android:longClickable="false" />
+
+    <ProgressBar
+        android:id="@+id/food"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:background="#363636" />
+
+    <TextView
+        android:id="@+id/numFood"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="90dp"
+        android:gravity="bottom"
+        android:text="Food: 3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/numWater"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="90dp"
+        android:gravity="bottom|right"
+        android:text="Water: 3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="365dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="150dp"
+        android:gravity="center|top"
+        android:text="Event"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:text="Health"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Progress"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="108dp"
+        android:gravity="center"
+        android:text="Progress"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hunger"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="40dp"
+        android:text="Hunger: 100"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/thirst"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="275sp"
+        android:layout_marginTop="40dp"
+        android:text="Thirst: 100"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible" />
+</FrameLayout>
